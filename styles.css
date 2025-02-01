@@ -113,16 +113,21 @@ main {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .intro-section {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
     }
-    .intro-section img {
-        margin: 0 0 20px 0;
+
+    p {
+        font-size: 16px;
     }
-    .split-section {
-        flex-direction: column;
+
+    nav a {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
     }
 }
 
