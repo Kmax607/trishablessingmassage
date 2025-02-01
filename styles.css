@@ -280,3 +280,26 @@ footer p {
     border-radius: 10px;
     text-align: center;
 }
+
+.contact-info {
+    text-align: center; /* Center align the content */
+    margin-top: 30px;
+}
+
+.contact-info img {
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits well */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 480px) {
+    .contact-info img {
+        width: 250px;
+        height: 180px;
+    }
+}
