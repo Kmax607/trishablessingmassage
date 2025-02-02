@@ -3,20 +3,20 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #22aaa1, #e5c1cd);
+    background: linear-gradient(to bottom, #faf9f6, #0649ae);
     color: #333;
 }
 
 /* Header */
 header {
-    background-color: #e5c1cd;
+    background-color: #98fb98;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #86b6f3;
+    border-bottom: 4px solid #0047ab;
 }
 
 header h1 {
-    color: #00695c;
+    color: #0047ab;
     font-size: 2.5em;
     margin: 0;
 }
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00796b;
+    color: #0047ab;
 }
 
 /* Main Content */
@@ -92,11 +92,11 @@ main {
 }
 
 .split-item img {
-    width: 100%; /* Adjust width to fit the container */
-    max-width: 400px; /* Set a max width to keep images uniform */
-    height: 200px; /* Set a fixed height for consistency */
-    object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners for a polished look */
+    width: 100%; /* Ensure images scale properly */
+    max-width: 400px; /* Set a maximum width for uniformity */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the images cover the space */
+    border-radius: 10px;
 }
 
 
@@ -135,9 +135,9 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #e5c1cd;
+    background-color: #98fb98;
     color: #004d40;
-    border-top: 2px solid #86b6f3;
+    border-top: 4px solid #0047ab;
 }
 
 footer p {
