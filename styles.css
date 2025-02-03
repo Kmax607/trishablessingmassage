@@ -92,14 +92,21 @@ main {
     text-align: center;
 }
 
+/* Ensure images scale properly */
 .split-item img {
-    width: 100%; /* Ensure images scale properly */
-    max-width: 400px; /* Set a maximum width for uniformity */
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the images cover the space */
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
+/* Responsive fix: Stack items on smaller screens */
+@media (max-width: 768px) {
+    .split-section .split-item {
+        flex: 1 1 100%;
+    }
+}
 
 .split-section h3 {
     color: #004d40;
@@ -112,6 +119,7 @@ main {
     font-size: 1em;
     color: #333;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 480px) {
