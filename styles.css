@@ -460,3 +460,35 @@ body {
     transform: scaleY(-1);
     transform: scaleX(-1); /* Flip the image horizontally */
 }
+
+.back-link {
+    color: #004D40FF;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-link::before {
+    content: '';
+    margin-right: 5px;
+}
+
+/* Make sure the links don't have an underline by default */
+a {
+    text-decoration: none; /* Remove the underline */
+}
+
+/* Apply the underline only when the link is hovered over */
+a:hover {
+    text-decoration: underline; /* Underline the text on hover */
+}
+
+
