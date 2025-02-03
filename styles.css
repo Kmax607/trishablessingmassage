@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #faf9f6, #0649ae);
+    background: linear-gradient(to bottom, #faf9f6, #faf9f6);
     color: #333;
 }
 
@@ -16,11 +16,40 @@ header {
     border-bottom: 4px solid #0047ab;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+header img {
+    width: 80px; /* Default image size */
+    height: auto;
+    max-width: 15%; /* Ensures scalability */
+    object-fit: contain; /* Keeps image proportions */
+}
+
 header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
     color: #0047ab;
-    font-size: 2.5em;
     margin: 0;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center;
+    }
+
+    header img {
+        max-width: 100px; /* Reduce image size on small screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Scale down text on mobile */
+    }
+}
+
 
 /* Navigation */
 nav {
@@ -145,7 +174,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #98fb98;
-    background: linear-gradient(to bottom, #98fb98, #faf9f6);
+    background: linear-gradient(to bottom, #faf9f6, #cbffcb, #98fb98);
     color: #0047ab;
     border-top: 4px solid #0047ab;
 }
@@ -397,4 +426,37 @@ label {
         width: 250px;
         height: 180px;
     }
+}
+body {
+    margin: 0;
+}
+.corner-image {
+    position: absolute;
+    top: 0;
+    width: 140px; /* Adjust size as needed */
+    height: 120px;
+}
+.top-left {
+    left: 0;
+}
+.top-right {
+    right: 0;
+    transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.bottom-corner-image {
+    position: absolute;
+    bottom: 0;
+    width: 140px; /* Adjust size as needed */
+    height: 120px;
+}
+
+.bottom-left {
+    left: 0;
+    transform: scaleY(-1);
+}
+.bottom-right {
+    right: 0;
+    transform: scaleY(-1);
+    transform: scaleX(-1); /* Flip the image horizontally */
 }
