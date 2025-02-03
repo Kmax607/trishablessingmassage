@@ -136,7 +136,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #98fb98;
-    color: #004d40;
+    color: #0047ab;
     border-top: 4px solid #0047ab;
 }
 
@@ -231,6 +231,78 @@ footer p {
 }
 
 /* Carousel Navigation Arrows */
+.carousel-section {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Added for positioning buttons */
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel Navigation Arrows */
+.carousel-section {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Keep this to position the buttons inside the carousel */
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Smaller Carousel Navigation Buttons */
 .carousel button {
     position: absolute;
     top: 50%;
@@ -238,11 +310,16 @@ footer p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 1.5rem; /* Smaller button size */
+    padding: 10px; /* Smaller padding */
     cursor: pointer;
     border-radius: 50%;
     transition: background 0.3s ease-in-out;
+    width: 30px; /* Make the buttons smaller in width */
+    height: 30px; /* Make the buttons smaller in height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel button:hover {
@@ -250,12 +327,20 @@ footer p {
 }
 
 .prev {
-    left: 10px;
+    left: 10px; /* Move left button closer to the left */
 }
 
 .next {
-    right: 10px;
+    right: 10px; /* Move right button closer to the right */
 }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px; /* Adjust the right padding to match the left */
+    font-weight: bold;
+}
+
 
 .sub-images {
     display: flex;
