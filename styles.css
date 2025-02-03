@@ -10,6 +10,7 @@ body {
 /* Header */
 header {
     background-color: #98fb98;
+    background: linear-gradient(to bottom, #98fb98, #faf9f6);
     padding: 20px;
     text-align: center;
     border-bottom: 4px solid #0047ab;
@@ -136,6 +137,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #98fb98;
+    background: linear-gradient(to bottom, #98fb98, #faf9f6);
     color: #0047ab;
     border-top: 4px solid #0047ab;
 }
