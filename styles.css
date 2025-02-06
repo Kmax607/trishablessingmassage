@@ -265,9 +265,6 @@ footer p {
     transition: transform 0.3s ease-in-out;
 }
 
-.carousel img:hover {
-    transform: scale(1.05);
-}
 
 /* Carousel Navigation Arrows */
 .carousel-section {
@@ -301,9 +298,6 @@ footer p {
     transition: transform 0.3s ease-in-out;
 }
 
-.carousel img:hover {
-    transform: scale(1.05);
-}
 
 /* Carousel Navigation Arrows */
 .carousel-section {
@@ -335,10 +329,6 @@ footer p {
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-}
-
-.carousel img:hover {
-    transform: scale(1.05);
 }
 
 /* Smaller Carousel Navigation Buttons */
