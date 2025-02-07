@@ -481,4 +481,7 @@ a:hover {
     text-decoration: underline; /* Underline the text on hover */
 }
 
+.subtitle {
+    font-size: 0.5em; /* Adjust size relative to parent */
+}
 
