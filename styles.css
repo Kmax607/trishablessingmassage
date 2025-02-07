@@ -485,3 +485,25 @@ a:hover {
     font-size: 0.5em; /* Adjust size relative to parent */
 }
 
+/* Certification images container */
+.certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align images to the right */
+    margin-right: 20px; /* Add spacing from the right edge */
+    margin-top: 10px; /* Space below the header */
+}
+
+.certification-container img {
+    width: 150px; /* Set a consistent size */
+    height: auto;
+    margin-bottom: 10px; /* Add space between images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .certification-container img {
+        width: 100px; /* Adjust for smaller screens */
+    }
+}
+
