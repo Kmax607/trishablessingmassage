@@ -53,7 +53,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:max.kraus607@gmail.com?subject=Contact Form Submission&body=Name: ${fullName}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    const mailtoLink = `mailto:Patriciashemoblessinglmt@gmail.com,Trishashemomassage@gmail.com?subject=Contact Form Submission&body=Name: ${fullName}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
 
     window.location.href = mailtoLink;
 });
