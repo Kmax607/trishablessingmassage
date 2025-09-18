@@ -466,7 +466,6 @@ body {
 }
 
 .back-link:hover {
-    text-decoration: underline;
 }
 
 .back-link::before {
@@ -481,7 +480,6 @@ a {
 
 /* Apply the underline only when the link is hovered over */
 a:hover {
-    text-decoration: underline; /* Underline the text on hover */
 }
 
 .subtitle {
@@ -510,3 +508,24 @@ a:hover {
     }
 }
 
+/* General link styles */
+a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Keep base color */
+    display: inline-block; /* Needed so transform scaling works */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect */
+a:hover {
+    color: #0047ab; /* Change text color */
+    text-decoration-color: #0047ab;
+    transform: scale(1.035); /* Slightly enlarge text and images */
+}
+
+a.social-link,
+a.social-link:hover {
+    color: inherit;          /* No color change */
+    text-decoration: none;   /* No underline */
+    transform: none;         /* No scaling */
+}
